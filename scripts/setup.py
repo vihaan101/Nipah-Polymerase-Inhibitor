@@ -50,10 +50,9 @@ def check_dependencies():
             missing.append(pkg)
     
     if missing:
-        print(f"  Missing packages: {', '.join(missing)}")
-        print("  Installing via pip...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install"] + missing)
-        print("  All python packages installed.")
+        print(f"  WARNING: Missing packages: {', '.join(missing)}")
+        print("  Please run: uv pip install -r requirements.txt")
+        # Do not auto-install in a managed environment
     else:
         print("  All python packages present.")
 
