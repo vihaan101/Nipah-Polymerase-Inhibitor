@@ -10,7 +10,7 @@
 
 Nipah virus (NiV) represents a catastrophic public health risk to the Indian subcontinent, as evidenced by recurring outbreaks in Kerala (2018, 2021, 2023) where case fatality rates reached as high as 70-90%. There are currently no clinically approved therapeutics or vaccines specifically for NiV. A major hurdle in the drug development pipeline is the high mutation rate of RNA viruses, which allows them to rapidly evolve resistance against site-specific inhibitors. This research project utilizes a multi-layered computational strategy to identify a small-molecule inhibitor capable of targeting the viral polymerase while maintaining efficacy against the predicted high-probability W730A resistance mutation.
 
-Through a first-principles assessment of the viral polymerase structure (PDB: 9KNZ), I established a design constraint called **Allosteric Independence**. This requires any lead candidate to bind in a pocket that is geographically distinct from the mutation site W730, thereby preventing steric disruption upon mutation. After screening a library of 50 high-potential candidates using a rigid-receptor docking protocol, I identified **BMS-986205 (Linrodostat)**, an investigational IDO1 inhibitor, as a superior lead. BMS-986205 demonstrated a binding affinity of -7.50 kcal/mol against the wild-type polymerase and maintained a stable -7.50 kcal/mol against the W730A mutant. Geometric analysis confirmed a physical separation of 6.28 Å from the mutation site. Given its current status in global Phase 3 clinical trials for oncology, BMS-986205 is a primary candidate for rapid drug repurposing to secure India’s population against future outbreaks.
+Through a first-principles assessment of the viral polymerase structure (PDB: 9KNZ), I established a design constraint called **Allosteric Independence**. This requires any lead candidate to bind in a pocket that is geographically distinct from the mutation site W730, thereby preventing steric disruption upon mutation. After screening a library of 50 high-potential candidates using a rigid-receptor docking protocol, I identified **BMS-986205 (Linrodostat)**, an investigational IDO1 inhibitor, as a superior lead. BMS-986205 demonstrated a binding affinity of -7.16 kcal/mol against the wild-type polymerase and maintained a stable -7.29 kcal/mol against the W730A mutant. Geometric analysis confirmed a physical separation of 6.28 Å from the mutation site. Given its current status in global Phase 3 clinical trials for oncology, BMS-986205 is a primary candidate for rapid drug repurposing to secure India’s population against future outbreaks.
 
 ---
 
@@ -101,8 +101,8 @@ The selection of BMS-986205 was based on its superior performance against both W
 *Figure 2: Statistical Validation. BMS-986205 (Left) maintains affinity across strains. The Control ERDRP-0519 (Right) loses binding energy.*
 
 ### Quantitative Data
-*   **BMS-986205 (Ours):** -7.50 kcal/mol (Wild Type) | -7.50 kcal/mol (Mutant).
-*   **ERDRP-0519 (Control):** -6.69 kcal/mol (Wild Type) | -6.52 kcal/mol (Mutant).
+*   **BMS-986205 (Ours):** -7.16 kcal/mol (Wild Type) | -7.29 kcal/mol (Mutant).
+*   **ERDRP-0519 (Control):** -6.68 kcal/mol (Wild Type) | -6.52 kcal/mol (Mutant).
 
 The stability in binding energy against the mutant confirms that BMS-986205 does not rely on TRP730 for its stability.
 
