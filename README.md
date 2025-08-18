@@ -4,7 +4,7 @@
 This repository contains the verified pipeline for discovering inhibitors for the Nipah Virus Polymerase (L-Protein), specifically targeting the W730 allosteric pocket to ensure resilience against the common W730A escape mutation.
 
 ## Directory Structure
-- `Nipah_Laboratory_Notebook.ipynb`: **Start Here.** The Unified Runbook that controls the entire lab (Data Prep + Experiments).
+- `Nipah_Inhibitor_Discovery_Pipeline.ipynb`: **Start Here.** The Unified Runbook that controls the data prep and experiments.
 - `HOW_I_BUILT_THIS.md`: The "Director's Cut" of the project—chemistry choices, failures, and fixes.
 - `Final_Report.md`: The formal scientific paper explaining the biology, methodology, and results.
 - `scripts/`: Contains the backend Python logic (`pipeline.py`, `verify.py`, `setup.py`) used by the notebook.
@@ -12,7 +12,7 @@ This repository contains the verified pipeline for discovering inhibitors for th
 - `bin/`: Contains the AutoDock Vina executable.
 
 ## 1. Quick Start
-**Recommended:** Open `Nipah_Laboratory_Notebook.ipynb`. It is a self-contained lab bench that lets you run the entire project from one place.
+**Recommended:** Open `Nipah_Inhibitor_Discovery_Pipeline.ipynb`. It is a self-contained lab bench that lets you run the entire project from one place.
 
 If you prefer the command line:
 If you just want to run the pipeline immediately, the `data/` folder already contains the pre-computed receptor files.
