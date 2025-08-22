@@ -28,11 +28,19 @@ If you want to verify the entire data preparation pipeline starting from the raw
     -   **OpenBabel**: You must have `obabel` in your path.
         -   Mac: `brew install open-babel`
         -   Linux: `sudo apt-get install openbabel`
-    -   **Python Deps**: `pip install biopython gemmi numpy pandas meeko rdkit`
+    -   **UV (The Python Manager)**: This project uses `uv` for lightning-fast dependency management.
+        -   Install: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
-2.  **Run the Setup:**
+2.  **Install Dependencies:**
     ```bash
-    python3 setup.py
+    uv venv
+    source .venv/bin/activate
+    uv pip install -r requirements.txt
+    ```
+
+3.  **Run the Setup:**
+    ```bash
+    python3 scripts/setup.py
     ```
     This will:
     -   Download the raw `9KNZ.cif` from the Protein Data Bank.

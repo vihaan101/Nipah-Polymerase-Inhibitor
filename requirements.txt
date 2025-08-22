@@ -1,0 +1,9 @@
+biopython
+gemmi
+numpy
+pandas
+meeko
+rdkit
+scipy
+matplotlib
+jupyter
