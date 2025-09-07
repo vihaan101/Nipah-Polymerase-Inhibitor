@@ -9,7 +9,9 @@ This repository contains the verified pipeline for discovering inhibitors for th
 - `data/`: Contains the precise 9KNZ receptor structures (Wild-Type and W730A Mutant) and the ligand files.
 - `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
 - `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
+- `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
 - `HOW_I_BUILT_THIS.md`: The "Director's Cut" of the project—chemistry choices, failures, and fixes.
+- `Final_Report.md`: The formal scientific paper explaining the biology, methodology, and results.
 
 ## 1. Quick Start
 If you just want to run the pipeline immediately, the `data/` folder already contains the pre-computed receptor files.
@@ -68,6 +70,11 @@ This code is just the final product. But the real science happened in the failur
 👉 **[HOW_I_BUILT_THIS.md](HOW_I_BUILT_THIS.md)**
 
 It's the personal story of how this project was actually built.
+
+## 6. The Formal Paper
+If you want the standard scientific format (Abstract, Methods, Results, References), see:
+
+👉 **[Final_Report.md](Final_Report.md)**
 
 ## Requirements
 -   **Python 3.9+**
