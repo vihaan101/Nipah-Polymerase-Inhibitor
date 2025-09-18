@@ -30,7 +30,7 @@ Most drug discovery efforts focus on maximizing binding affinity against the wil
 The goal was to identify an inhibitor that binds to a conserved pocket spatially distinct from the W730 residue. By ensuring a significant Euclidean distance between the drug's centroid and the mutable coordinate, I ensured that structural modifications in the protein's side-chains would not result in steric hindrance against the inhibitor.
 
 ### Strategic Repurposing
-Developing a new drug from scratch takes 15 years and billions of dollars—time we do not have during a Nipah epidemic. The novelty of this project is in the strategic selection of **Drug Repurposing** [7]. I identified **BMS-986205**, which is already in Phase 3 human safety trials. This bypasses a decade of safety testing, allowing a candidate cancer drug to be pivoted into an immediate antiviral weapon. This is a crucial defense strategy for the Indian pharmaceutical sector to adopt, as it leverages existing manufacturing infrastructure to respond to emerging threats.
+Developing a new drug from scratch takes 15 years and billions of dollars - time we do not have during a Nipah epidemic. The novelty of this project is in the strategic selection of **Drug Repurposing** [7]. I identified **BMS-986205**, which is already in Phase 3 human safety trials. This bypasses a decade of safety testing, allowing a candidate cancer drug to be pivoted into an immediate antiviral weapon. This is a crucial defense strategy for the Indian pharmaceutical sector to adopt, as it leverages existing manufacturing infrastructure to respond to emerging threats.
 
 ---
 

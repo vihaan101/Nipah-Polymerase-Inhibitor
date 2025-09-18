@@ -15,7 +15,7 @@ This isn't the clean version of the project where everything worked on the first
 ## 2. Phase 1: Establishing the Ground Truth
 
 ### The Problem of Structure
-I started out trying to use **Homology Modeling**—basically guessing the Nipah structure by looking at its cousin, the Measles virus. It seemed like a good shortcut, but I realized pretty quickly that "guessing" wasn't good enough. Homology models often have uncertainties of >2.0 Å in side-chain positioning. In an allosteric pocket, being off by 2 Å is like trying to unlock a door with the wrong key.
+I started out trying to use **Homology Modeling** - basically guessing the Nipah structure by looking at its cousin, the Measles virus. It seemed like a good shortcut, but I realized pretty quickly that "guessing" wasn't good enough. Homology models often have uncertainties of >2.0 Å in side-chain positioning. In an allosteric pocket, being off by 2 Å is like trying to unlock a door with the wrong key.
 
 So I scrapped the models and switched to the newly released **Cryo-EM data (PDB: 9KNZ)**. Since this is experimental data derived from actual electron density maps, it gave me a "ground truth" coordinate system to start from.
 
@@ -27,7 +27,7 @@ It turned out the massive L-Protein (~2000 residues) was triggering a silent buf
 I had to write a custom script (`splice_receptor.py`) to split the protein into "N-Term" and "C-Term" chunks, convert them separately to bypass the buffer limit, and then surgically stitch them back together.
 
 ### The Crystal Water Trap
-I also messed up the water handling at first. The crystal structure came with a bunch of $H_2O$ molecules trapped inside, and I assumed they were important structural bridges. Big mistake. My early docking runs were terrible—the drugs refused to bind because I was essentially asking them to squeeze into a pocket filled with concrete.
+I also messed up the water handling at first. The crystal structure came with a bunch of $H_2O$ molecules trapped inside, and I assumed they were important structural bridges. Big mistake. My early docking runs were terrible - the drugs refused to bind because I was essentially asking them to squeeze into a pocket filled with concrete.
 
 Then I realized I was ignoring **entropy**. In a real cell, those waters aren't frozen; they're chaotic. When a drug enters, it kicks them out (desolvation), which actually *helps* binding. Once I deleted the explicit waters, the drugs finally fit.
 
