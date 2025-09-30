@@ -8,7 +8,8 @@ This repository contains the verified pipeline for discovering inhibitors for th
 - `verify.py`: The "Certificate of Authenticity" script to verify our findings (BMS-986205 vs ERDRP-0519).
 - `data/`: Contains the precise 9KNZ receptor structures (Wild-Type and W730A Mutant) and the ligand files.
 - `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
-- `SCIENTIFIC_JOURNEY.md`: A detailed narrative of the "Chemistry Decisions" behind this project (Pitfalls, Failures, & First-Principles Logic).
+- `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
+- `HOW_I_BUILT_THIS.md`: The "Director's Cut" of the project—chemistry choices, failures, and fixes.
 
 ## 1. Quick Start
 If you just want to run the pipeline immediately, the `data/` folder already contains the pre-computed receptor files.
@@ -62,11 +63,11 @@ python3 verify.py
 -   Outputs a final "Certificate of Reproducibility" proving the resistance profile.
 
 ## 5. Understanding the Science (The "Why")
-This code is just the final product of a long scientific journey. To understand *why* we chose specific algorithms, *how* we failed (e.g., the "Vacuum Hole" fallacy), and *what* chemistry reasoning led to the final protocol, read:
+This code is just the final product. But the real science happened in the failures. To read about the "Vacuum Hole Fallacy", the "Crystal Water Trap", and other rabbit holes I went down (and how I climbed out), check out:
 
-👉 **[SCIENTIFIC_JOURNEY.md](SCIENTIFIC_JOURNEY.md)**
+👉 **[HOW_I_BUILT_THIS.md](HOW_I_BUILT_THIS.md)**
 
-It serves as the "Scientific Logic" companion to this "Code Logic".
+It's the personal story of how this project was actually built.
 
 ## Requirements
 -   **Python 3.9+**
