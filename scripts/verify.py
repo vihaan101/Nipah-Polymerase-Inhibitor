@@ -24,7 +24,8 @@ BOX_CONFIG = {
 }
 
 # Paths (Relative to this script)
-BASE_DIR = Path(__file__).parent
+# Paths (Relative to this script)
+BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 BIN_DIR = BASE_DIR / "bin"
 VINA_EXEC = BIN_DIR / "vina"

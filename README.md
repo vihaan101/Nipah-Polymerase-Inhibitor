@@ -4,16 +4,15 @@
 This repository contains the verified pipeline for discovering inhibitors for the Nipah Virus Polymerase (L-Protein), specifically targeting the W730 allosteric pocket to ensure resilience against the common W730A escape mutation.
 
 ## Directory Structure
-- `Experiment_Notebook.ipynb`: **Start Here.** The interactive lab notebook that explains every step in plain English.
-- `pipeline.py`: The tool for you to test your own drug candidates.
-- `verify.py`: The "Certificate of Authenticity" script to verify our findings (BMS-986205 vs ERDRP-0519).
-- `data/`: Contains the precise 9KNZ receptor structures (Wild-Type and W730A Mutant) and the ligand files.
-- `bin/`: Contains the AutoDock Vina executable (macOS Silicon/Intel compatible).
+- `Nipah_Laboratory_Notebook.ipynb`: **Start Here.** The Unified Runbook that controls the entire lab (Data Prep + Experiments).
 - `HOW_I_BUILT_THIS.md`: The "Director's Cut" of the project—chemistry choices, failures, and fixes.
 - `Final_Report.md`: The formal scientific paper explaining the biology, methodology, and results.
+- `scripts/`: Contains the backend Python logic (`pipeline.py`, `verify.py`, `setup.py`) used by the notebook.
+- `data/`: Contains the precise 9KNZ receptor structures and the ligand files.
+- `bin/`: Contains the AutoDock Vina executable.
 
 ## 1. Quick Start
-**Recommended:** Open `Experiment_Notebook.ipynb` in Jupyter or VS Code. It runs the entire experiment interactively and plots the graphs for you.
+**Recommended:** Open `Nipah_Laboratory_Notebook.ipynb`. It is a self-contained lab bench that lets you run the entire project from one place.
 
 If you prefer the command line:
 If you just want to run the pipeline immediately, the `data/` folder already contains the pre-computed receptor files.

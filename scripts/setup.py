@@ -8,7 +8,7 @@ import shutil
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 RAW_DATA_DIR = BASE_DIR / "raw_data"
 DATA_DIR = BASE_DIR / "data"
 BIN_DIR = BASE_DIR / "bin"
